@@ -66,7 +66,7 @@ class RsspiderSpider(scrapy.Spider):
                                           )]  
       
     def after_login(self, response):  
-        # 登录之后，开始进入我要爬取的私信页面  
+  
 #        os.system('wget my.bupt.edu.cn/index.portal?.pn=p1778')
         for url in self.start_urls:  
             # 因为我们上面定义了Rule，所以只需要简单的生成初始爬取Request即可  
@@ -91,7 +91,7 @@ class RsspiderSpider(scrapy.Spider):
             for link in links:  
                 seen.add(link)  
                 r = Request(url=link.url, callback=self._response_downloaded)  
-                # 下面这句是我重写的  
+                 
                 r.meta.update(rule=n, link_text=link.text, cookiejar=response.meta['cookiejar'])  
                 yield rule.process_request(r)  
 #    def parse_item(self, response):
