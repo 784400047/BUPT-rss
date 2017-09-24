@@ -10,10 +10,10 @@
 用scrapy写的爬虫，下面说一下使用方法
 
 
-Windows：先按http://www.cnblogs.com/tigerm/p/scrapy.html安装scrapy，先填一下/rss/spider/rsspider.py中的学号和密码，之后双击rumme.bat
+Windows：先按http://www.cnblogs.com/tigerm/p/scrapy.html  安装scrapy，先填一下/rss/spider/rsspider.py中的学号和密码，之后双击rumme.bat
 
 
-到最后在BUPT-rss下生成一个rss.xml，最好在根据https://jingyan.baidu.com/album/e2284b2b72bffce2e6118d2c.html将rumme.bat设置到计划任务中，设置每天执行一次。
+到最后在BUPT-rss下生成一个rss.xml，最好在根据https://jingyan.baidu.com/album/e2284b2b72bffce2e6118d2c.html  将rumme.bat设置到计划任务中，设置每天执行一次。
 
 
 之后在 http://www.appinn.com/easywebserver/ 下载安装easywebserver，将网站根目录定到BUPT-rss下，之后就能用FeedDemon导入地址为127.0.0.1/rss.xml的feed了。
