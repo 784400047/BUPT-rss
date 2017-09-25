@@ -1,0 +1,1 @@
+scrapy runspider rss/spiders/rsspider.py
